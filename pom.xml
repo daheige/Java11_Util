@@ -22,16 +22,16 @@
     </build>
 
     <properties>
-        <fastjson.version>1.2.7</fastjson.version>
+        <!--<fastjson.version>1.2.7</fastjson.version>-->
         <junit.version>4.12</junit.version>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>${fastjson.version}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba</groupId>-->
+            <!--<artifactId>fastjson</artifactId>-->
+            <!--<version>${fastjson.version}</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>junit</groupId>
