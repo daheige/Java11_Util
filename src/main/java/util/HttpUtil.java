@@ -10,6 +10,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
+/**
+ * HttpClient Util
+ * @author cv
+ */
 public class HttpUtil {
 
     /**
