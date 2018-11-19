@@ -11,5 +11,5 @@
 
 ### 2.[DateUtil](https://github.com/cvzm/Java11_Util/blob/master/src/main/java/util/DateUtil.java)
 ##### 日期处理工具类， 兼容Java8
-##### 在[HttpUtilTest](https://github.com/cvzm/Java11_Util/blob/master/src/test/java/DateUtilTest.java)中有具体的使用Demo。
+##### 在[DateUtilTest](https://github.com/cvzm/Java11_Util/blob/master/src/test/java/DateUtilTest.java)中有具体的使用Demo。
 ##### 直接复制该Class文件即可使用，无需额外引入第三方jar。
