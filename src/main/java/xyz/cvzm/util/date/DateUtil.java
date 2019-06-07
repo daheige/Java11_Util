@@ -1,6 +1,5 @@
-package util;
+package xyz.cvzm.util.date;
 
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -21,7 +20,7 @@ public class DateUtil {
      */
     public static Date parseDate(String dateString, String format) {
         try {
-            DateFormat dateFormat = new SimpleDateFormat(format);
+            var dateFormat = new SimpleDateFormat(format);
             return dateFormat.parse(dateString);
         } catch (ParseException e) {
             return null;
@@ -47,7 +46,7 @@ public class DateUtil {
      */
     public static String parseString(Object seconds, String format) {
         if(seconds instanceof Date) {
-            Date date = (Date) seconds;
+            var date = (Date) seconds;
             seconds = date.getTime();
         }
         if (seconds.toString().length() == 10) {
@@ -56,7 +55,7 @@ public class DateUtil {
         if (format == null || format.isEmpty()) {
             format = "yyyy-MM-dd HH:mm:ss";
         }
-        SimpleDateFormat sdf = new SimpleDateFormat(format);
+        var sdf = new SimpleDateFormat(format);
         return sdf.format(new Date(Long.parseLong(seconds.toString())));
     }
 
@@ -90,13 +89,13 @@ public class DateUtil {
      */
     public static Date compressTime(Object seconds) {
         if(seconds instanceof Date) {
-            Date date = (Date) seconds;
+            var date = (Date) seconds;
             seconds = date.getTime();
         }
         if (seconds.toString().length() == 10) {
             seconds = seconds+"000";
         }
-        Calendar calendar = Calendar.getInstance();
+        var calendar = Calendar.getInstance();
         calendar.setTime(new Date(Long.parseLong(seconds.toString())));
         calendar.set(Calendar.HOUR_OF_DAY, 0);
         calendar.set(Calendar.MINUTE, 0);
@@ -126,7 +125,7 @@ public class DateUtil {
      * @return
      */
     public static Date getDateByAddDay(Date date, int day, int month, int year) {
-        Calendar calendar = Calendar.getInstance();
+        var calendar = Calendar.getInstance();
         calendar.setTime(date);
         calendar.add(Calendar.YEAR, year);//把日期往后增加一天.整数往后推,负数往前移动
         calendar.add(Calendar.MONTH, month);//把日期往后增加一天.整数往后推,负数往前移动
