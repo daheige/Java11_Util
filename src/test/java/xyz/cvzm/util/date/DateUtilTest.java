@@ -1,7 +1,6 @@
 package xyz.cvzm.util.date;
 
 import org.junit.Test;
-import xyz.cvzm.util.date.DateUtil;
 
 public class DateUtilTest {
 
