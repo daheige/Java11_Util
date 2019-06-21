@@ -165,6 +165,9 @@ public class HttpUtil {
          * @return builder
          */
         private Builder url(String url) {
+            if (url == null || url.isBlank()) {
+                throw new IllegalArgumentException("url is null");
+            }
             builder.uri(URI.create(url));
             return this;
         }
